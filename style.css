@@ -1,18 +1,74 @@
-textarea {
-    width: 80%;
-    height: 10vh;
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #333;
+  }
+  
+  #txt-input {
+    width: 50%;
+    height: 150px;
     display: block;
-    margin: 1rem;
+    margin: 1rem auto;
     padding: 1rem;
-    color: rgb(0, 0, 0);
-}
-
-#output {
-
-    border: 1px solid black;
-    height: 10vh;
-    width: 80%;
-    margin: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+  }
+  
+  #btn-translate {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #btn-translate:hover {
+    background-color: #0056b3;
+  }
+  
+  #output {
+    border: 1px solid #ccc;
+    height: 150px;
+    width: 50%;
+    margin: 1rem auto;
     padding: 1rem;
-
-}
+    font-size: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow-y: auto;
+    word-wrap: break-word;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Center the app on the screen */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
